@@ -5,25 +5,17 @@
 @endsection
 
 @section('content')
-@foreach($products->chunk(3) as $productChunk)
-<div class="row">
-  @foreach($productChunk as $product)
-  <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="{{$product->imagePath}}" alt="..." class="img-responsive">
-        <div class="caption">
-          <h3>{{$product->title}}</h3>
-          <p class="description">{{$product->description}}</p>
-          <div class="clearfix">
-              <div class="pull-left price">${{$product->price}}</div>
-              <a href="#" class="btn btn-success pull-right" role="button">Add to Cart</a>
-          </div>
-        </div>
-      </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container">
+  <div class="row jumbotron">
+    <div class="col-md-8">
+      <h1>This is farmer</h1>
+      <p>A farmer[1] (also called an agriculturer) is a person engaged in agriculture, raising living organisms for food or raw materials. The term usually applies to people who do some combination of raising field crops, orchards, vineyards, poultry, or other livestock. A farmer might own the farmed land or might work as a laborer on land owned by others, but in advanced economies, a farmer is usually a farm owner, while employees of the farm are known as farm workers, or farmhands. However, in the not so distant past, a farmer was a person who promotes or improves the growth of (a plant, crop, etc.) by labor and attention, land or crops or raises animals (as livestock or fish). 
+        
+      </p>
     </div>
-  @endforeach
- 
+
+  </div>
 </div>
-@endforeach
 
 @endsection 
